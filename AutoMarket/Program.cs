@@ -8,8 +8,7 @@ namespace AutoMarket
         static void Main(string[] args)
         {
             string carNumber;
-            var taxoPark = new TaxoPark();
-            
+            var taxoPark = new TaxoPark();            
             taxoPark.Notify += DisplayMessage;
 
             try
@@ -52,8 +51,7 @@ namespace AutoMarket
             catch (Exception ex)
             {
                 Console.WriteLine($"Ошибка: {ex.Message}");
-            }
-                                   
+            }                                   
         }
 
         private static void DisplayMessage(string message)

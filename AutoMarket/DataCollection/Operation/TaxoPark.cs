@@ -85,9 +85,7 @@ namespace AutoMarket
         {
             CarInfo found = carList.Find(numb => numb.RegistrationNumber == carNumber);
             DisplayCar(found);
-        }
-
-        
+        }              
 
         public void EditingCar(string carNumber)
         {
@@ -95,7 +93,6 @@ namespace AutoMarket
             {
                 do
                 {
-
                     CarInfo found = carList.Find(numb => numb.RegistrationNumber == carNumber);
                     if (found != null)
                     {

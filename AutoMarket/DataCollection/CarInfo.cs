@@ -20,8 +20,8 @@ namespace AutoMarket
             Date = date;
             Mileage = mileage;
             Price = price;
-        }               
-         
+        }     
+                 
         public override string ToString()
         {
             return $"Модель Автомобиля: {Model}, Номер: {RegistrationNumber}, Дата выпуска: {Date}, Пробег: {Mileage}, Цена: {Price}";
