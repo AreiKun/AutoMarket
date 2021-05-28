@@ -32,7 +32,7 @@ namespace AutoMarket
 
                     Console.WriteLine("Проверьте правильность ввода, если требуется корректировка нажмите пробел");                                          
                 }
-                while (Console.ReadKey().Key == ConsoleKey.Spacebar && Model != null);
+                while (Console.ReadKey().Key == ConsoleKey.Spacebar && !string.IsNullOrWhiteSpace(Model));
                 return Model;
             }
             catch (Exception)
