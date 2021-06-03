@@ -95,7 +95,7 @@ namespace AutoMarket
 
                     Console.WriteLine("Проверьте правильность ввода, если требуется корректировка нажмите пробел");
                 }
-                while (Console.ReadKey().Key == ConsoleKey.Spacebar && Date >= dateTimeMin);
+                while (Console.ReadKey().Key == ConsoleKey.Spacebar && Date >= dateTimeMin && Date <= dateTimeMax);
                 return Date;
             }
             catch (Exception) { throw; }
